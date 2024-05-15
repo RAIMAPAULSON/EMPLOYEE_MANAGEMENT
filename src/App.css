@@ -1,3 +1,6 @@
+body{
+  background-color: rgb(232, 232, 237);
+}
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -25,3 +28,10 @@
     cursor: pointer;
     font-size: 20px;
   }
+ .btnColor{
+  background-color: green;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+ }
+ 

@@ -89,13 +89,16 @@ const App = () => {
 
   return (
     <div>
-      <h1>Employee Management App</h1>
-      <button onClick={handleAddEmployeeClick}>Add Employee</button>
-      <EmployeeList
-        employees={employees}
-        deleteEmployee={handleDeleteEmployee}
-        startEditing={startEditing}
-      />
+      <div className="heading">
+        <h1>Employee Management App</h1>
+        <button onClick={handleAddEmployeeClick} className="btnColor">Add Employee</button>
+      </div>
+        <EmployeeList
+          employees={employees}
+          deleteEmployee={handleDeleteEmployee}
+          startEditing={startEditing}
+        />
+      
       {showModal && (
         <div className="modal-overlay">
           <div className="modal">
